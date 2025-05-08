@@ -11,7 +11,7 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/abd/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -22,7 +22,7 @@
 			"com.esonofander.abd.AbdClient"
 		],
 		"fabric-datagen": [
-			"com.esonofander.abd.AbdDataGenerator"
+			"com.esonofander.abd.generators.AbdDataGenerator"
 		]
 	},
 	"mixins": [

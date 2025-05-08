@@ -1,5 +1,6 @@
 package com.esonofander.abd;
 
+import com.esonofander.abd.block.AbdBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ public class Abd implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		//LOGGER.info("Hello Fabric world!");
+		AbdBlocks.initialize();
 	}
 }
