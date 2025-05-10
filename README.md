@@ -1,2 +1,2 @@
 # ABD-Fabric
-Based on AbsentByDesign by Lothrazar for the Fabric mod loader
+Inspired by the Forge/Neoforge mod, AbsentByDesign by Lothrazar, for the Fabric mod loader
