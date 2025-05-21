@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wall",
+  "key": {
+    "#": "minecraft:stripped_mangrove_wood"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "abd:stripped_mangrove_wood_wall"
+  }
+}

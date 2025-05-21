@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "blocken_slab",
+  "key": {
+    "#": "minecraft:bamboo_block"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "abd:bamboo_block_slab"
+  }
+}

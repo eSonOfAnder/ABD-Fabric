@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "abd:oak_wood_wall",
+    "abd:stripped_oak_wood_wall",
+    "abd:spruce_wood_wall",
+    "abd:stripped_spruce_wood_wall",
+    "abd:birch_wood_wall",
+    "abd:stripped_birch_wood_wall",
+    "abd:jungle_wood_wall",
+    "abd:stripped_jungle_wood_wall",
+    "abd:dark_oak_wood_wall",
+    "abd:stripped_dark_oak_wood_wall",
+    "abd:mangrove_wood_wall",
+    "abd:stripped_mangrove_wood_wall",
+    "abd:cherry_wood_wall",
+    "abd:stripped_cherry_wood_wall",
+    "abd:pale_oak_wood_wall",
+    "abd:stripped_pale_oak_wood_wall",
+    "abd:bamboo_block_wall",
+    "abd:stripped_bamboo_block_wall",
+    "abd:crimson_hyphae_wall",
+    "abd:stripped_crimson_hyphae_wall",
+    "abd:warped_hyphae_wall",
+    "abd:stripped_warped_hyphae_wall"
+  ]
+}

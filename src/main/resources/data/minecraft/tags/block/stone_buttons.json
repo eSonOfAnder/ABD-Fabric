@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "abd:polished_granite_button",
+    "abd:polished_diorite_button",
+    "abd:polished_andesite_button",
+    "abd:polished_deepslate_button",
+    "abd:smooth_sandstone_button",
+    "abd:smooth_red_sandstone_button",
+    "abd:polished_basalt_button",
+    "abd:end_stone_button",
+    "abd:purpur_button",
+    "abd:smooth_quartz_button"
+  ]
+}

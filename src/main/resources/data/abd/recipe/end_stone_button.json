@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "stone_button",
+  "ingredients": [
+    "minecraft:end_stone"
+  ],
+  "result": {
+    "count": 1,
+    "id": "abd:end_stone_button"
+  }
+}

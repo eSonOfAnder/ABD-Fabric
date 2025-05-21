@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values":[
+    "abd:oak_log_slab",
+    "abd:spruce_log_slab",
+    "abd:birch_log_slab",
+    "abd:jungle_log_slab",
+    "abd:dark_oak_log_slab",
+    "abd:mangrove_log_slab",
+    "abd:cherry_log_slab",
+    "abd:pale_oak_log_slab",
+    "abd:bamboo_block_slab",
+    "abd:stripped_bamboo_block_slab",
+    "abd:crimson_stem_slab",
+    "abd:warped_stem_slab",
+    "abd:stripped_oak_log_slab",
+    "abd:stripped_spruce_log_slab",
+    "abd:stripped_birch_log_slab",
+    "abd:stripped_jungle_log_slab",
+    "abd:stripped_dark_oak_log_slab",
+    "abd:stripped_mangrove_log_slab",
+    "abd:stripped_cherry_log_slab",
+    "abd:stripped_pale_oak_log_slab",
+    "abd:stripped_bamboo_block_slab",
+    "abd:stripped_stripped_bamboo_block_slab",
+    "abd:stripped_crimson_stem_slab",
+    "abd:stripped_warped_stem_slab"
+  ]
+
+}
