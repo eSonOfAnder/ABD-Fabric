@@ -1,0 +1,32 @@
+{
+  "parent": "abd:recipes/root",
+  "criteria": {
+    "has_purpur": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:purpur"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "abd:purpur_pressure_plate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_purpur"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "abd:purpur_pressure_plate"
+    ]
+  }
+}

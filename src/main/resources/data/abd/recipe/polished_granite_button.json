@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "stone_button",
+  "ingredients": [
+    "minecraft:polished_granite"
+  ],
+  "result": {
+    "count": 1,
+    "id": "abd:polished_granite_button"
+  }
+}

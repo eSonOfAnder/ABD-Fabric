@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "abd:block/stripped_crimson_stem_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_crimson_stem"
+    },
+    "type=top": {
+      "model": "abd:block/stripped_crimson_stem_slab_top"
+    }
+  }
+}

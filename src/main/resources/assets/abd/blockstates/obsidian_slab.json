@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "abd:block/obsidian_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/obsidian"
+    },
+    "type=top": {
+      "model": "abd:block/obsidian_slab_top"
+    }
+  }
+}

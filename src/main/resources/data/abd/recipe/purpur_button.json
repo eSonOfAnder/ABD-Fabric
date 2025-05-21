@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "stone_button",
+  "ingredients": [
+    "minecraft:purpur"
+  ],
+  "result": {
+    "count": 1,
+    "id": "abd:purpur_button"
+  }
+}
