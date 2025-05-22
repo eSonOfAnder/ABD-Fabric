@@ -21,20 +21,20 @@ Below is a list of all variant blocks included in the mod.
 ### Stone Types
 
 -  Stairs
-  - Smooth Stone
-  - Calcite
-  - Deepslate
-  - Dripstone
-  - Packed Mud
-  - Obsidian
-  - Crying Obsidian
-  - Basalt
-  - Smooth Basalt
-  - Polished Basalt
-  - End Stone
-  - Quartz Bricks
-  - All Terracotta
-  - All Concrete
+    - Smooth Stone
+    - Calcite
+    - Deepslate
+    - Dripstone
+    - Packed Mud
+    - Obsidian
+    - Crying Obsidian
+    - Basalt
+    - Smooth Basalt
+    - Polished Basalt
+    - End Stone
+    - Quartz Bricks
+    - All Terracotta
+    - All Concrete
 - Slabs
   - Calcite
   - Deepslate
