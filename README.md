@@ -12,10 +12,13 @@ Below is a list of all variant blocks included in the mod.
 
 ### Wood Types
 
-- Slabs and Walls
-    - All vanilla logs
+- Slab
+    - All vanilla logs (including giant nether fungi)
     - All vanilla wood blocks (bark texture on all 6 sides)
     - All stripped vanilla logs
+    - All stripped vanilla wood blocks
+- Wall
+    - All vanilla wood blocks
     - All stripped vanilla wood blocks
 
 ### Stone Types
@@ -35,7 +38,7 @@ Below is a list of all variant blocks included in the mod.
     - Quartz Bricks
     - All Terracotta
     - All Concrete
-- Slabs
+- Slab
   - Calcite
   - Deepslate
   - Dripstone
@@ -54,9 +57,45 @@ Below is a list of all variant blocks included in the mod.
 - Fence Gate
   - Brick
   - Nether Brick
-- Wall
-  - All Terracotta
-  - All Concrete
+*   Wall
+    *   Stone
+    *   Smooth Stone
+    *   Polished Granite
+    *   Polished Diorite
+    *   Polished Andesite
+    *   Calcite
+    *   Deepslate
+    *   Dripstone
+    *   Packed Mud
+    *   Smooth Sandstone
+    *   Smooth Red Sandstone
+    *   Prismarine Brick
+    *   Dark Prismarine
+    *   Obsidian
+    *   Crying Obsidian
+    *   Nether Brick
+    *   Basalt
+    *   Smooth Basalt
+    *   Polished Basalt
+    *   End Stone
+    *   Purpur
+    *   Quartz
+    *   Quartz Brick
+    *   Smooth Quartz
+    *   All Terracotta
+    *   All Concrete
+*   Pressure Plate and Button
+    *   Polished Granite
+    *   Polished Diorite
+    *   Polished Andesite
+    *   Polished Deepslate
+    *   Smooth Sandstone
+    *   Smooth Red Sandstone
+    *   Polished Basalt
+    *   End Stone
+    *   Purpur
+    *   Smooth Quartz
+
 
 ## Known Issues
 
@@ -71,5 +110,6 @@ There are currently only a couple of features planned for a future update.
 - Glazed Terracotta Slabs
 - Red Nether Brick Fence and Fence Gate
   - Revamp of Red Nether Brick recipes to add a Red Nether Brick item to match the existing Nether Brick, and various Nether Brick block variants
+- Copper Fence and Copper Fence Gate
 - Correct block hit and break sounds for Brick and Nether Brick Fence Gates
 - Add a brick type sound for Nether Brick and Brick Fence Gates
