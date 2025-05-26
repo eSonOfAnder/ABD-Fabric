@@ -5,8 +5,8 @@
     "#": "minecraft:deepslate"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {

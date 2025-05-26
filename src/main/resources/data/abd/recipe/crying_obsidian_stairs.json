@@ -5,8 +5,8 @@
     "#": "minecraft:crying_obsidian"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {

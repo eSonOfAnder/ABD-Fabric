@@ -5,8 +5,8 @@
     "#": "minecraft:dripstone_block"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {

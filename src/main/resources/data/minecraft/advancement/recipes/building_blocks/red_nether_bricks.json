@@ -1,11 +1,12 @@
 {
-  "parent": "abd:recipes/root",
+  "replace": true,
+  "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_bricks": {
+    "has_red_nether_brick": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:nether_bricks"
+            "items": "abd:red_nether_brick"
           }
         ]
       },
@@ -13,7 +14,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "abd:nether_brick_wall"
+        "recipe": "minecraft:red_nether_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +22,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_nether_bricks"
+      "has_red_nether_brick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "abd:nether_brick_wall"
+      "minecraft:red_nether_bricks"
     ]
   }
 }

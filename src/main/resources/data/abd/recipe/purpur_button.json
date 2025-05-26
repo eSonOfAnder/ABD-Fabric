@@ -3,7 +3,7 @@
   "category": "redstone",
   "group": "stone_button",
   "ingredients": [
-    "minecraft:purpur"
+    "minecraft:purpur_block"
   ],
   "result": {
     "count": 1,

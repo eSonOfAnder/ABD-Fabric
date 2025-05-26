@@ -1,7 +1,8 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
     "abd:nether_brick_fence_gate",
+    "abd:red_nether_brick_fence_gate",
     "abd:brick_fence_gate"
   ]
 }

@@ -5,8 +5,8 @@
     "#": "minecraft:smooth_basalt"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {

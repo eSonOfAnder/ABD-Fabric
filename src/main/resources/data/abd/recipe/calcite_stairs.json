@@ -5,8 +5,8 @@
     "#": "minecraft:calcite"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {

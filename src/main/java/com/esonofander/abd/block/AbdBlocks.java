@@ -9,6 +9,7 @@ import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -56,6 +57,17 @@ public class AbdBlocks {
         StrippableBlockRegistry.register(AbdBlocks.CRIMSON_STEM_SLAB,AbdBlocks.STRIPPED_CRIMSON_STEM_SLAB);
         StrippableBlockRegistry.register(AbdBlocks.WARPED_HYPHAE_WALL,AbdBlocks.STRIPPED_WARPED_HYPHAE_WALL);
         StrippableBlockRegistry.register(AbdBlocks.WARPED_STEM_SLAB,AbdBlocks.STRIPPED_WARPED_STEM_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.ACACIA_WOOD_SLAB,AbdBlocks.STRIPPED_ACACIA_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.OAK_WOOD_SLAB,AbdBlocks.STRIPPED_OAK_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.SPRUCE_WOOD_SLAB,AbdBlocks.STRIPPED_SPRUCE_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.BIRCH_WOOD_SLAB,AbdBlocks.STRIPPED_BIRCH_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.JUNGLE_WOOD_SLAB,AbdBlocks.STRIPPED_JUNGLE_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.DARK_OAK_WOOD_SLAB,AbdBlocks.STRIPPED_DARK_OAK_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.MANGROVE_WOOD_SLAB,AbdBlocks.STRIPPED_MANGROVE_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.CHERRY_WOOD_SLAB,AbdBlocks.STRIPPED_CHERRY_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.PALE_OAK_WOOD_SLAB,AbdBlocks.STRIPPED_PALE_OAK_WOOD_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.CRIMSON_STEM_SLAB,AbdBlocks.STRIPPED_CRIMSON_STEM_SLAB);
+        StrippableBlockRegistry.register(AbdBlocks.WARPED_STEM_SLAB,AbdBlocks.STRIPPED_WARPED_STEM_SLAB);
     }
 
     public static void initialize() {
@@ -63,107 +75,130 @@ public class AbdBlocks {
         registerStrippableBlocks();
     }
 
-    public static void setupItemGroups() {
+    private static void setupItemGroups() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> {
-                    itemGroup.add(AbdBlocks.OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SPRUCE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_SPRUCE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.SPRUCE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_SPRUCE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.BIRCH_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_BIRCH_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.BIRCH_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_BIRCH_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.JUNGLE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_JUNGLE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.JUNGLE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_JUNGLE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.ACACIA_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_ACACIA_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.ACACIA_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_ACACIA_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.DARK_OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_DARK_OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.DARK_OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_DARK_OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.MANGROVE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_MANGROVE_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.MANGROVE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_MANGROVE_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.CHERRY_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_CHERRY_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.CHERRY_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_CHERRY_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.PALE_OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_PALE_OAK_LOG_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.PALE_OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_PALE_OAK_WOOD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.BAMBOO_BLOCK_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_BAMBOO_BLOCK_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.BAMBOO_BLOCK_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_BAMBOO_BLOCK_WALL.asItem());
-                    itemGroup.add(AbdBlocks.CRIMSON_STEM_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_CRIMSON_STEM_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.CRIMSON_HYPHAE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.WARPED_STEM_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_WARPED_STEM_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.WARPED_HYPHAE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STRIPPED_WARPED_HYPHAE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.STONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_STONE_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_STONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_GRANITE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_DIORITE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_ANDESITE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.CALCITE_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.CALCITE_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.CALCITE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.DEEPSLATE_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.DEEPSLATE_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.DEEPSLATE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.DRIPSTONE_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.DRIPSTONE_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.DRIPSTONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.BRICK_FENCE.asItem());
-                    itemGroup.add(AbdBlocks.BRICK_FENCE_GATE.asItem());
-                    itemGroup.add(AbdBlocks.PACKED_MUD_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.PACKED_MUD_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.PACKED_MUD_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_SANDSTONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_RED_SANDSTONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.PRISMARINE_BRICK_WALL.asItem());
-                    itemGroup.add(AbdBlocks.DARK_PRISMARINE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.OBSIDIAN_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.OBSIDIAN_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.OBSIDIAN_WALL.asItem());
-                    itemGroup.add(AbdBlocks.CRYING_OBSIDIAN_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.CRYING_OBSIDIAN_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.CRYING_OBSIDIAN_WALL.asItem());
-                    itemGroup.add(AbdBlocks.NETHER_BRICK_WALL.asItem());
-                    itemGroup.add(AbdBlocks.BASALT_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.BASALT_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.BASALT_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_BASALT_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_BASALT_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_BASALT_WALL.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_BASALT_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_BASALT_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.POLISHED_BASALT_WALL.asItem());
-                    itemGroup.add(AbdBlocks.END_STONE_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.END_STONE_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.END_STONE_WALL.asItem());
-                    itemGroup.add(AbdBlocks.PURPUR_WALL.asItem());
-                    itemGroup.add(AbdBlocks.QUARTZ_WALL.asItem());
-                    itemGroup.add(AbdBlocks.QUARTZ_BRICK_STAIRS.asItem());
-                    itemGroup.add(AbdBlocks.QUARTZ_BRICK_SLAB.asItem());
-                    itemGroup.add(AbdBlocks.QUARTZ_BRICK_WALL.asItem());
-                    itemGroup.add(AbdBlocks.SMOOTH_QUARTZ_WALL.asItem());
-                    itemGroup.add(AbdBlocks.NETHER_BRICK_FENCE_GATE.asItem());
+                    itemGroup.addAfter(Items.OAK_LOG, AbdBlocks.OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_OAK_LOG, AbdBlocks.STRIPPED_OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.OAK_WOOD, AbdBlocks.OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.OAK_WOOD_SLAB, AbdBlocks.OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_OAK_WOOD, AbdBlocks.STRIPPED_OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_OAK_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.SPRUCE_LOG, AbdBlocks.SPRUCE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_SPRUCE_LOG, AbdBlocks.STRIPPED_SPRUCE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.SPRUCE_WOOD, AbdBlocks.SPRUCE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.SPRUCE_WOOD_SLAB, AbdBlocks.SPRUCE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_SPRUCE_WOOD, AbdBlocks.STRIPPED_SPRUCE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_SPRUCE_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_SPRUCE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.BIRCH_LOG, AbdBlocks.BIRCH_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_BIRCH_LOG, AbdBlocks.STRIPPED_BIRCH_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.BIRCH_WOOD, AbdBlocks.BIRCH_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.BIRCH_WOOD_SLAB, AbdBlocks.BIRCH_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_BIRCH_WOOD, AbdBlocks.STRIPPED_BIRCH_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_BIRCH_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_BIRCH_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.JUNGLE_LOG, AbdBlocks.JUNGLE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_JUNGLE_LOG, AbdBlocks.STRIPPED_JUNGLE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.JUNGLE_WOOD, AbdBlocks.JUNGLE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.JUNGLE_WOOD_SLAB, AbdBlocks.JUNGLE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_JUNGLE_WOOD, AbdBlocks.STRIPPED_JUNGLE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_JUNGLE_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_JUNGLE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.ACACIA_LOG, AbdBlocks.ACACIA_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_ACACIA_LOG, AbdBlocks.STRIPPED_ACACIA_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.ACACIA_WOOD, AbdBlocks.ACACIA_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.ACACIA_WOOD_SLAB, AbdBlocks.ACACIA_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_ACACIA_WOOD, AbdBlocks.STRIPPED_ACACIA_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_ACACIA_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_ACACIA_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.DARK_OAK_LOG, AbdBlocks.DARK_OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_DARK_OAK_LOG, AbdBlocks.STRIPPED_DARK_OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.DARK_OAK_WOOD, AbdBlocks.DARK_OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.DARK_OAK_WOOD_SLAB, AbdBlocks.DARK_OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_DARK_OAK_WOOD, AbdBlocks.STRIPPED_DARK_OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_DARK_OAK_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_DARK_OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.MANGROVE_LOG, AbdBlocks.MANGROVE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_MANGROVE_LOG, AbdBlocks.STRIPPED_MANGROVE_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.MANGROVE_WOOD, AbdBlocks.MANGROVE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.MANGROVE_WOOD_SLAB, AbdBlocks.MANGROVE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_MANGROVE_WOOD, AbdBlocks.STRIPPED_MANGROVE_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_MANGROVE_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_MANGROVE_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.CHERRY_LOG, AbdBlocks.CHERRY_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_CHERRY_LOG, AbdBlocks.STRIPPED_CHERRY_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.CHERRY_WOOD, AbdBlocks.CHERRY_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.CHERRY_WOOD_SLAB, AbdBlocks.CHERRY_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_CHERRY_WOOD, AbdBlocks.STRIPPED_CHERRY_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_CHERRY_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_CHERRY_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.PALE_OAK_LOG, AbdBlocks.PALE_OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_PALE_OAK_LOG, AbdBlocks.STRIPPED_PALE_OAK_LOG_SLAB.asItem());
+                    itemGroup.addAfter(Items.PALE_OAK_WOOD, AbdBlocks.PALE_OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.PALE_OAK_WOOD_SLAB, AbdBlocks.PALE_OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_PALE_OAK_WOOD, AbdBlocks.STRIPPED_PALE_OAK_WOOD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_PALE_OAK_WOOD_SLAB.asItem(), AbdBlocks.STRIPPED_PALE_OAK_WOOD_WALL.asItem());
+                    itemGroup.addAfter(Items.BAMBOO_BLOCK, AbdBlocks.BAMBOO_BLOCK_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_BAMBOO_BLOCK, AbdBlocks.STRIPPED_BAMBOO_BLOCK_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.BAMBOO_BLOCK_SLAB, AbdBlocks.BAMBOO_BLOCK_WALL.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_BAMBOO_BLOCK_SLAB, AbdBlocks.STRIPPED_BAMBOO_BLOCK_WALL.asItem());
+                    itemGroup.addAfter(Items.CRIMSON_STEM, AbdBlocks.CRIMSON_STEM_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_CRIMSON_STEM, AbdBlocks.STRIPPED_CRIMSON_STEM_SLAB.asItem());
+                    itemGroup.addAfter(Items.CRIMSON_HYPHAE, AbdBlocks.CRIMSON_HYPHAE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.CRIMSON_HYPHAE_SLAB, AbdBlocks.CRIMSON_HYPHAE_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_CRIMSON_HYPHAE, AbdBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_CRIMSON_HYPHAE_SLAB, AbdBlocks.STRIPPED_CRIMSON_HYPHAE_WALL.asItem());
+                    itemGroup.addAfter(Items.WARPED_STEM, AbdBlocks.WARPED_STEM_SLAB.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_WARPED_STEM, AbdBlocks.STRIPPED_WARPED_STEM_SLAB.asItem());
+                    itemGroup.addAfter(Items.WARPED_HYPHAE, AbdBlocks.WARPED_HYPHAE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.WARPED_HYPHAE_SLAB, AbdBlocks.WARPED_HYPHAE_WALL.asItem());
+                    itemGroup.addAfter(Items.STRIPPED_WARPED_HYPHAE, AbdBlocks.STRIPPED_WARPED_HYPHAE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.STRIPPED_WARPED_HYPHAE_SLAB, AbdBlocks.STRIPPED_WARPED_HYPHAE_WALL.asItem());
+                    itemGroup.addAfter(Items.STONE, AbdBlocks.STONE_WALL.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_STONE, AbdBlocks.SMOOTH_STONE_STAIRS.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_STONE_SLAB, AbdBlocks.SMOOTH_STONE_WALL.asItem());
+                    itemGroup.addAfter(Items.POLISHED_GRANITE_SLAB, AbdBlocks.POLISHED_GRANITE_WALL.asItem());
+                    itemGroup.addAfter(Items.POLISHED_DIORITE_SLAB, AbdBlocks.POLISHED_DIORITE_WALL.asItem());
+                    itemGroup.addAfter(Items.POLISHED_ANDESITE_SLAB, AbdBlocks.POLISHED_ANDESITE_WALL.asItem());
+                    itemGroup.addAfter(Items.CALCITE, AbdBlocks.CALCITE_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.CALCITE_STAIRS, AbdBlocks.CALCITE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.CALCITE_SLAB, AbdBlocks.CALCITE_WALL.asItem());
+                    itemGroup.addAfter(Items.DEEPSLATE, AbdBlocks.DEEPSLATE_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.DEEPSLATE_STAIRS, AbdBlocks.DEEPSLATE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.DEEPSLATE_SLAB, AbdBlocks.DEEPSLATE_WALL.asItem());
+                    itemGroup.addAfter(Items.DRIPSTONE_BLOCK, AbdBlocks.DRIPSTONE_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.DRIPSTONE_STAIRS, AbdBlocks.DRIPSTONE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.DRIPSTONE_SLAB, AbdBlocks.DRIPSTONE_WALL.asItem());
+                    itemGroup.addAfter(Items.BRICK_WALL, AbdBlocks.BRICK_FENCE.asItem());
+                    itemGroup.addAfter(AbdBlocks.BRICK_FENCE, AbdBlocks.BRICK_FENCE_GATE.asItem());
+                    itemGroup.addAfter(Items.PACKED_MUD, AbdBlocks.PACKED_MUD_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.PACKED_MUD_STAIRS, AbdBlocks.PACKED_MUD_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.PACKED_MUD_SLAB, AbdBlocks.PACKED_MUD_WALL.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_SANDSTONE_SLAB, AbdBlocks.SMOOTH_SANDSTONE_WALL.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_RED_SANDSTONE_SLAB, AbdBlocks.SMOOTH_RED_SANDSTONE_WALL.asItem());
+                    itemGroup.addAfter(Items.PRISMARINE_BRICK_SLAB, AbdBlocks.PRISMARINE_BRICK_WALL.asItem());
+                    itemGroup.addAfter(Items.DARK_PRISMARINE_SLAB, AbdBlocks.DARK_PRISMARINE_WALL.asItem());
+                    itemGroup.addAfter(Items.OBSIDIAN, AbdBlocks.OBSIDIAN_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.OBSIDIAN_STAIRS, AbdBlocks.OBSIDIAN_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.OBSIDIAN_SLAB, AbdBlocks.OBSIDIAN_WALL.asItem());
+                    itemGroup.addAfter(Items.CRYING_OBSIDIAN, AbdBlocks.CRYING_OBSIDIAN_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.CRYING_OBSIDIAN_STAIRS, AbdBlocks.CRYING_OBSIDIAN_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.CRYING_OBSIDIAN_SLAB, AbdBlocks.CRYING_OBSIDIAN_WALL.asItem());
+                    itemGroup.addAfter(Items.BASALT, AbdBlocks.BASALT_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.BASALT_STAIRS, AbdBlocks.BASALT_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.BASALT_SLAB, AbdBlocks.BASALT_WALL.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_BASALT, AbdBlocks.SMOOTH_BASALT_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.SMOOTH_BASALT_STAIRS, AbdBlocks.SMOOTH_BASALT_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.SMOOTH_BASALT_SLAB, AbdBlocks.SMOOTH_BASALT_WALL.asItem());
+                    itemGroup.addAfter(Items.POLISHED_BASALT, AbdBlocks.POLISHED_BASALT_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.POLISHED_BASALT_STAIRS, AbdBlocks.POLISHED_BASALT_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.POLISHED_BASALT_SLAB, AbdBlocks.POLISHED_BASALT_WALL.asItem());
+                    itemGroup.addAfter(Items.END_STONE, AbdBlocks.END_STONE_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.END_STONE_STAIRS, AbdBlocks.END_STONE_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.END_STONE_SLAB, AbdBlocks.END_STONE_WALL.asItem());
+                    itemGroup.addAfter(Items.PURPUR_SLAB, AbdBlocks.PURPUR_WALL.asItem());
+                    itemGroup.addAfter(Items.QUARTZ_SLAB, AbdBlocks.QUARTZ_WALL.asItem());
+                    itemGroup.addAfter(Items.QUARTZ_BRICKS, AbdBlocks.QUARTZ_BRICK_STAIRS.asItem());
+                    itemGroup.addAfter(AbdBlocks.QUARTZ_BRICK_STAIRS, AbdBlocks.QUARTZ_BRICK_SLAB.asItem());
+                    itemGroup.addAfter(AbdBlocks.QUARTZ_BRICK_SLAB, AbdBlocks.QUARTZ_BRICK_WALL.asItem());
+                    itemGroup.addAfter(Items.SMOOTH_QUARTZ_SLAB, AbdBlocks.SMOOTH_QUARTZ_WALL.asItem());
+                    itemGroup.addAfter(Items.NETHER_BRICK_FENCE, AbdBlocks.NETHER_BRICK_FENCE_GATE.asItem());
+                    itemGroup.addAfter(Blocks.RED_NETHER_BRICK_WALL, AbdBlocks.RED_NETHER_BRICK_FENCE.asItem());
+                    itemGroup.addAfter(AbdBlocks.RED_NETHER_BRICK_FENCE, AbdBlocks.RED_NETHER_BRICK_FENCE_GATE.asItem());
                     itemGroup.add(AbdBlocks.TERRACOTTA_STAIRS.asItem());
                     itemGroup.add(AbdBlocks.TERRACOTTA_SLAB.asItem());
                     itemGroup.add(AbdBlocks.TERRACOTTA_WALL.asItem());
@@ -964,12 +999,6 @@ public class AbdBlocks {
             AbstractBlock.Settings.copy(Blocks.CRYING_OBSIDIAN)
     );
 
-    public static final Block NETHER_BRICK_WALL = register(
-            "nether_brick_wall",
-            AbdWallBlock::new,
-            AbstractBlock.Settings.copy(Blocks.NETHER_BRICKS)
-    );
-
     public static final Block BASALT_WALL = register(
             "basalt_wall",
             AbdWallBlock::new,
@@ -1188,6 +1217,29 @@ public class AbdBlocks {
             AbstractBlock.Settings.create()
                     .mapColor(MapColor.DARK_RED)
                     .solid()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)
+    );
+
+    public static final Block RED_NETHER_BRICK_FENCE_GATE = register(
+            "red_nether_brick_fence_gate",
+            settings -> new FenceGateBlock(WoodType.SPRUCE, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_RED)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
+                    .strength(2.0F, 6.0F)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)
+    );
+
+    public static final Block RED_NETHER_BRICK_FENCE = register(
+            "red_nether_brick_fence",
+            FenceBlock::new,
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.DARK_RED)
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresTool()
                     .strength(2.0F, 6.0F)
@@ -1795,6 +1847,7 @@ public class AbdBlocks {
                     .mapColor(Blocks.BRICKS.getDefaultMapColor())
                     .solid()
                     .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresTool()
                     .strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
     );
@@ -1809,5 +1862,203 @@ public class AbdBlocks {
                     .requiresTool()
                     .strength(2.0F, 6.0F)
                     .sounds(BlockSoundGroup.NETHER_BRICKS)
+    );
+
+    public static final Block OAK_WOOD_SLAB = register(
+            "oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_OAK_WOOD_SLAB = register(
+            "stripped_oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block SPRUCE_WOOD_SLAB = register(
+            "spruce_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_SPRUCE_WOOD_SLAB = register(
+            "stripped_spruce_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block BIRCH_WOOD_SLAB = register(
+            "birch_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_BIRCH_WOOD_SLAB = register(
+            "stripped_birch_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block JUNGLE_WOOD_SLAB = register(
+            "jungle_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_JUNGLE_WOOD_SLAB = register(
+            "stripped_jungle_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block ACACIA_WOOD_SLAB = register(
+            "acacia_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_ACACIA_WOOD_SLAB = register(
+            "stripped_acacia_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block DARK_OAK_WOOD_SLAB = register(
+            "dark_oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_DARK_OAK_WOOD_SLAB = register(
+            "stripped_dark_oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block MANGROVE_WOOD_SLAB = register(
+            "mangrove_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_MANGROVE_WOOD_SLAB = register(
+            "stripped_mangrove_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block CHERRY_WOOD_SLAB = register(
+            "cherry_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_CHERRY_WOOD_SLAB = register(
+            "stripped_cherry_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block PALE_OAK_WOOD_SLAB = register(
+            "pale_oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_PALE_OAK_WOOD_SLAB = register(
+            "stripped_pale_oak_wood_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block CRIMSON_HYPHAE_SLAB = register(
+            "crimson_hyphae_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_CRIMSON_HYPHAE_SLAB = register(
+            "stripped_crimson_hyphae_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block WARPED_HYPHAE_SLAB = register(
+            "warped_hyphae_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
+    );
+
+    public static final Block STRIPPED_WARPED_HYPHAE_SLAB = register(
+            "stripped_warped_hyphae_slab",
+            AbdSlabBlock::new,
+            AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .burnable()
+                    .hardness(2.0f)
     );
 }

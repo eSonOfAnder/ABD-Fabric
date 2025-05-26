@@ -5,8 +5,8 @@
     "#": "minecraft:packed_mud"
   },
   "pattern": [
-    "#",
-    "##",
+    "#  ",
+    "## ",
     "###"
   ],
   "result": {
