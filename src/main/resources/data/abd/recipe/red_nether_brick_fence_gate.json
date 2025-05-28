@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "abd:red_nether_brick",
+    "W": "minecraft:red_nether_bricks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "count": 2,
+    "id": "abd:red_nether_brick_fence_gate"
+  }
+}
