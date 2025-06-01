@@ -1,0 +1,32 @@
+{
+  "parent": "abd:recipes/root",
+  "criteria": {
+    "has_blue_terracotta_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "abd:blue_terracotta_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "abd:blue_glazed_terracotta_slab_from_blue_terracotta_slab_smelting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_terracotta_slab"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "abd:blue_glazed_terracotta_slab_from_blue_terracotta_slab_smelting"
+    ]
+  }
+}

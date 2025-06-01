@@ -298,6 +298,22 @@ public class AbdBlocks {
                     itemGroup.add(AbdBlocks.PINK_CONCRETE_STAIRS.asItem());
                     itemGroup.add(AbdBlocks.PINK_CONCRETE_SLAB.asItem());
                     itemGroup.add(AbdBlocks.PINK_CONCRETE_WALL.asItem());
+                    itemGroup.add(AbdBlocks.WHITE_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.GRAY_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.BLACK_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.BROWN_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.RED_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.ORANGE_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.YELLOW_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.LIME_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.GREEN_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.CYAN_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.BLUE_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.PURPLE_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.MAGENTA_GLAZED_TERRACOTTA_SLAB.asItem());
+                    itemGroup.add(AbdBlocks.PINK_GLAZED_TERRACOTTA_SLAB.asItem());
                 });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE)
@@ -2060,5 +2076,101 @@ public class AbdBlocks {
                     .sounds(BlockSoundGroup.WOOD)
                     .burnable()
                     .hardness(2.0f)
+    );
+
+    public static final Block WHITE_GLAZED_TERRACOTTA_SLAB = register(
+            "white_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.WHITE_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block LIGHT_GRAY_GLAZED_TERRACOTTA_SLAB = register(
+            "light_gray_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block GRAY_GLAZED_TERRACOTTA_SLAB = register(
+            "gray_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.GRAY_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block BLACK_GLAZED_TERRACOTTA_SLAB = register(
+            "black_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.BLACK_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block BROWN_GLAZED_TERRACOTTA_SLAB = register(
+            "brown_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.BROWN_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block RED_GLAZED_TERRACOTTA_SLAB = register(
+            "red_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.RED_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block ORANGE_GLAZED_TERRACOTTA_SLAB = register(
+            "orange_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.ORANGE_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block YELLOW_GLAZED_TERRACOTTA_SLAB = register(
+            "yellow_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.YELLOW_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block LIME_GLAZED_TERRACOTTA_SLAB = register(
+            "lime_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.LIME_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block GREEN_GLAZED_TERRACOTTA_SLAB = register(
+            "green_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.GREEN_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block CYAN_GLAZED_TERRACOTTA_SLAB = register(
+            "cyan_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.CYAN_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block LIGHT_BLUE_GLAZED_TERRACOTTA_SLAB = register(
+            "light_blue_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block BLUE_GLAZED_TERRACOTTA_SLAB = register(
+            "blue_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.BLUE_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block PURPLE_GLAZED_TERRACOTTA_SLAB = register(
+            "purple_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PURPLE_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block MAGENTA_GLAZED_TERRACOTTA_SLAB = register(
+            "magenta_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.MAGENTA_GLAZED_TERRACOTTA)
+    );
+
+    public static final Block PINK_GLAZED_TERRACOTTA_SLAB = register(
+            "pink_glazed_terracotta_slab",
+            AbdGlazedSlabBlock::new,
+            AbstractBlock.Settings.copy(Blocks.PINK_GLAZED_TERRACOTTA)
     );
 }

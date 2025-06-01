@@ -238,5 +238,21 @@
   "block.abd.pink_concrete_wall": "Pink Concrete Wall",
   "block.abd.brick_fence_gate": "Brick Fence Gate",
   "block.abd.brick_fence": "Brick Fence",
-  "item.abd.red_nether_brick": "Red Nether Brick"
+  "item.abd.red_nether_brick": "Red Nether Brick",
+  "block.abd.white_glazed_terracotta_slab": "White Glazed Terracotta Slab",
+  "block.abd.light_gray_glazed_terracotta_slab": "Light Gray Glazed Terracotta Slab",
+  "block.abd.gray_glazed_terracotta_slab": "Gray Glazed Terracotta Slab",
+  "block.abd.black_glazed_terracotta_slab": "Black Glazed Terracotta Slab",
+  "block.abd.brown_glazed_terracotta_slab": "Brown Glazed Terracotta Slab",
+  "block.abd.red_glazed_terracotta_slab": "Red Glazed Terracotta Slab",
+  "block.abd.orange_glazed_terracotta_slab": "Orange Glazed Terracotta Slab",
+  "block.abd.yellow_glazed_terracotta_slab": "Yellow Glazed Terracotta Slab",
+  "block.abd.lime_glazed_terracotta_slab": "Lime Glazed Terracotta Slab",
+  "block.abd.green_glazed_terracotta_slab": "Green Glazed Terracotta Slab",
+  "block.abd.cyan_glazed_terracotta_slab": "Cyan Glazed Terracotta Slab",
+  "block.abd.light_blue_glazed_terracotta_slab": "Light Blue Glazed Terracotta Slab",
+  "block.abd.blue_glazed_terracotta_slab": "Blue Glazed Terracotta Slab",
+  "block.abd.purple_glazed_terracotta_slab": "Purple Glazed Terracotta Slab",
+  "block.abd.magenta_glazed_terracotta_slab": "Magenta Glazed Terracotta Slab",
+  "block.abd.pink_glazed_terracotta_slab": "Pink Glazed Terracotta Slab"
 }

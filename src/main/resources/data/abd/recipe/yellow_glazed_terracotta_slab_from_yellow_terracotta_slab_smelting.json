@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "abd:yellow_terracotta_slab",
+  "result": {
+    "id": "abd:yellow_glazed_terracotta_slab"
+  }
+}
