@@ -16,7 +16,6 @@ import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import org.jetbrains.annotations.Nullable;
 
 public class AbdGlazedSlabBlock extends SlabBlock {
 
@@ -38,6 +37,7 @@ public class AbdGlazedSlabBlock extends SlabBlock {
         builder.add(FACING, TYPE, WATERLOGGED);
     }
 
+    @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         BlockPos blockPos = ctx.getBlockPos();
         BlockState blockState = ctx.getWorld().getBlockState(blockPos);
