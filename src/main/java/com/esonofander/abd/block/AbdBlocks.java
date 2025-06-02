@@ -2,14 +2,12 @@ package com.esonofander.abd.block;
 
 import com.esonofander.abd.Abd;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -70,9 +68,73 @@ public class AbdBlocks {
         StrippableBlockRegistry.register(AbdBlocks.WARPED_STEM_SLAB,AbdBlocks.STRIPPED_WARPED_STEM_SLAB);
     }
 
+    private static void registerFuelItems() {
+        FuelRegistryEvents.BUILD.register((builder, context) -> {
+            builder.add(AbdBlocks.OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.SPRUCE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.SPRUCE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.SPRUCE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_SPRUCE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_SPRUCE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_SPRUCE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.BIRCH_LOG_SLAB, 150);
+            builder.add(AbdBlocks.BIRCH_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.BIRCH_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_BIRCH_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_BIRCH_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_BIRCH_WOOD_WALL, 300);
+            builder.add(AbdBlocks.JUNGLE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.JUNGLE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.JUNGLE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_JUNGLE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_JUNGLE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_JUNGLE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.ACACIA_LOG_SLAB, 150);
+            builder.add(AbdBlocks.ACACIA_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.ACACIA_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_ACACIA_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_ACACIA_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_ACACIA_WOOD_WALL, 300);
+            builder.add(AbdBlocks.DARK_OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.DARK_OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.DARK_OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_DARK_OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_DARK_OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_DARK_OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.MANGROVE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.MANGROVE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.MANGROVE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_MANGROVE_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_MANGROVE_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_MANGROVE_WOOD_WALL, 300);
+            builder.add(AbdBlocks.CHERRY_LOG_SLAB, 150);
+            builder.add(AbdBlocks.CHERRY_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.CHERRY_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_CHERRY_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_CHERRY_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_CHERRY_WOOD_WALL, 300);
+            builder.add(AbdBlocks.PALE_OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.PALE_OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.PALE_OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_PALE_OAK_LOG_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_PALE_OAK_WOOD_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_PALE_OAK_WOOD_WALL, 300);
+            builder.add(AbdBlocks.BAMBOO_BLOCK_SLAB, 150);
+            builder.add(AbdBlocks.BAMBOO_BLOCK_WALL, 300);
+            builder.add(AbdBlocks.STRIPPED_BAMBOO_BLOCK_SLAB, 150);
+            builder.add(AbdBlocks.STRIPPED_BAMBOO_BLOCK_WALL, 300);
+        });
+    }
+
     public static void initialize() {
         setupItemGroups();
         registerStrippableBlocks();
+        registerFuelItems();
     }
 
     private static void setupItemGroups() {

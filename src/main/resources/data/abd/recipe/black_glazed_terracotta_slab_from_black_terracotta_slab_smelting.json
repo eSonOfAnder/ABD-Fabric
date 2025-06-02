@@ -1,6 +1,7 @@
 {
   "type": "minecraft:smelting",
   "category": "blocks",
+  "group": "glazed_terracotta_slab",
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": "abd:black_terracotta_slab",

@@ -1,5 +1,6 @@
 package com.esonofander.abd.block;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -11,7 +12,14 @@ import net.minecraft.util.math.Direction;
 
 // Added to include the AXIS property to make the SlabBlock compatible with the registerStrippableBlocks() method
 public class AbdSlabBlock extends SlabBlock {
+
+    public static final MapCodec<AbdSlabBlock> CODEC = createCodec(AbdSlabBlock::new);
     public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
+
+    @Override
+    public MapCodec<AbdSlabBlock> getCodec() {
+        return CODEC;
+    }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
